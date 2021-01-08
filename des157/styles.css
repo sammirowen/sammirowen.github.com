@@ -5,4 +5,17 @@ body {
 #banner {
     width: 800px;
     height: 250px;
+    background-color: red;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
