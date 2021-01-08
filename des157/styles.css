@@ -1,5 +1,10 @@
 body {
-    width: 800px;
+    min-width: 800px;
+    max-width: 1200px;
+    /*center if exceeds 1200px*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #banner {
@@ -10,12 +15,10 @@ body {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-section {
+section ul li {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
 }
