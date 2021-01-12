@@ -9,6 +9,10 @@ header, footer {
     text-align: center;
 }
 
+.blue {
+    color: #2b9497;
+}
+
 #banner {
     width: 800px;
     height: 250px;
