@@ -12,8 +12,231 @@ header, footer {
 #banner {
     width: 800px;
     height: 250px;
-    background-color: red;
+    background-color: black; /*#fffdd0;*/
     margin: auto;
+    position: relative;
+}
+
+.square { 
+    width: 30px;
+    height: 30px;
+    /*#d0d2ff;*/
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#square1 {
+    top: 40%;
+    left: 10%;
+    border: 15px solid #08F7FE;
+}
+
+#square2 {
+    top: 33%;
+    left: 14%;
+    border: 13px solid #08F7FE;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+#square3 {
+    top: 47%;
+    left: 14%;
+    border: 13px solid #08F7FE;
+    transform: rotate(360deg);
+    transition: all 1s;
+}
+
+#square4 {
+    top: 24%;
+    left: 18%;
+    border: 10px solid #08F7FE;
+    transform-origin: top right;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+}
+
+#square4:hover {
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+#square5 {
+    top: 38%;
+    left: 18%;
+    border: 10px solid #08F7FE;
+}
+
+#square6 {
+    top: 52%;
+    left: 18%;
+    border: 10px solid #08F7FE;
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+}
+
+#square6:hover {
+    transform: rotate(90deg);
+    transition: all 0.5s; 
+}
+
+#square7 {
+    height: 60px;
+    left: 22%;
+    top: 32%;
+    border: 6px solid #08F7FE;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+}
+
+#square7:hover {
+    transform: scale(1.7) translateX(7px);
+    transition: all 1s;
+}
+
+#square8 {
+    top: 24%;
+    left: 29%;
+    border: 4px solid #08F7FE;
+    transform-origin: bottom left;
+    transform: rotate(360deg);
+    transition: all 1.25s;
+}
+
+#square8:hover {
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+#square9 {
+    top: 52%;
+    left: 29%;
+    border: 4px solid #08F7FE;
+    transform-origin: top left;
+    transform: rotate(360deg);
+    transition: all 1.50s;
+}
+
+#square9:hover {
+    transform: rotate(-90deg);
+    transition: all 0.5s;
+}
+
+#square10 {
+    top: 38%;
+    left: 33%;
+    border: 2px solid #08F7FE;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+}
+
+#square10:hover {
+    transform: scale(1.7) translateX(7px);
+    transition: all 1s;
+}
+
+#square11 {
+    top: 38%;
+    left: 40%;
+    border: 1px solid #08F7FE;
+}
+
+#square11:hover {
+    animation-name: animation1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation1 {
+    0% {
+        left: 40%;
+    }
+    33% {
+        left: 44%;
+        border-radius: 18%;
+    }
+    66% {
+        left: 48%;
+        border-radius: 35%;
+    }
+    100% {
+        left: 52%;
+        border-radius: 50%;
+    }
+}
+
+#square12 {
+    top: 38%;
+    left: 56%; 
+    border: 1px solid #08F7FE;
+    transform: rotate(360deg);
+    transition: all 1s;
+    border-radius: 50%;
+}
+
+#square13 {
+    top: 30%;
+    left: 60%;
+    border: 2px solid #08F7FE;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+    border-radius: 50%;
+}
+
+#square13:hover {
+    transform: scale(1.2) translateY(-15px);
+    transition: all 1s;
+}
+
+#square14 {
+    top: 44%;
+    left: 60%;
+    border: 2px solid #08F7FE;
+    transform: rotate(0deg);
+    transition: transform 999s 999s;
+    border-radius: 50%;
+}
+
+#square14:hover {
+    transform: scale(1.2) translateY(15px);
+    transition: all 1s;
+}
+
+#square15 {
+    top: 32%;
+    left: 64%;
+    width: 65px;
+    height: 65px;
+    border: 6px solid #08F7FE;
+    border-radius: 50%;
+}
+
+#square15:hover {
+    transform: scale(-0.5);
+    transition: all 1s;
+}
+
+#square16 {
+    top: 24%;
+    left: 73%;
+    border: 10px solid #08F7FE;
+    border-radius: 50%;
+}
+
+#square17 {
+    top: 38%;
+    left: 73%;
+    border: 10px solid #08F7FE;
+    border-radius: 50%;
+}
+
+#square18 {
+    top: 52%;
+    left: 73%;
+    border: 10px solid #08F7FE;
+    border-radius: 50%;
 }
 
 main {
@@ -25,6 +248,10 @@ main {
     margin: auto;
 }
 
+#secondTitle {
+    color: #2b9497;
+}
+
 section ul {
     padding: 0px;
 }
@@ -33,6 +260,7 @@ section ul li {
     list-style-type: none;
 }
 
-section ul li a {
+a {
     text-decoration: none;
+    color: #2b9497;
 }
