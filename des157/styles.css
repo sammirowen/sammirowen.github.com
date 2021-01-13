@@ -310,3 +310,7 @@ a {
     text-decoration: none;
     color: #2b9497;
 }
+
+footer > a {
+    padding: 10px;
+}
