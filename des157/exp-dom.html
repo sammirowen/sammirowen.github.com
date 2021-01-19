@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimentation JS Dom</title>
+
+    <style>
+        .blueGreen {
+            color: #0d98ba;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        p,
+        h5 {
+            margin: 0px;
+        }
+
+        .twirl {
+            transition: all 3s ease-in-out;
+        }
+
+        .twirl:hover {
+            transform: rotate(3600deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h3></h3>
+    <h4>I'm Shelly</h4>
+    <img src="turtle.svg" alt="Shelly the turtle" class="twirl" style="width:200px;height:100px">
+
+    <h5>Did you say...?</h5>
+    <div>
+        <input class="checkBox" type="checkbox" name="reverse" />
+        <label for="reverse"></label>
+    </div>
+    <div>
+        <input class="checkBox" type="checkbox" name="backwards" />
+        <label for="backwards"></label>
+    </div>
+    <div>
+        <input class="checkBox" type="checkbox" name="blue" />
+        <label for="blue"></label>
+    </div>
+
+    <script>
+        //this takes in the user input, prints a greeting message, then 
+        //ask the user through a checkbox, which fact did they tell us about turtles
+        //and the first answer is reversed, the second is is mixed up by letters,
+        //and the third is correct but I added it in blue
+        //the turtle image also spins just to make it a little more fun
+        var name = prompt("Hi, what's your name?");
+        document.querySelector("h3").innerHTML = `Hello ${name}, nice to meet you!`;
+
+        var sentence = prompt("Enter a fact (real OR made up!) about turtles",);
+        console.log(sentence);
+
+        flipWords(sentence);
+
+        function flipWords(sentence) {
+            var words = sentence.split(" ");
+            //reverse each word's lettering in the sentence
+            var reverse = "";
+
+            for (var i = 0; i < words.length; i++) {
+                for (var j = words[i].length - 1; j >= 0; j--) {
+                    reverse += words[i][j];
+                }
+                reverse += " ";
+            }
+            flipSentence(reverse, words);
+        }
+
+        function flipSentence(reverse, words) {
+            //flip just the word order in the sentence
+            var newSentence = "";
+            for (var i = words.length - 1; i >= 0; i--) {
+                newSentence += words[i] + " ";
+            }
+            printOnScreen(reverse, newSentence);
+        }
+
+
+        function printOnScreen(wordingBackwards, wordingMixed) {
+            //ask if they said wording backwards/mixed/change color
+
+            var paras = document.getElementsByTagName('label');
+            paras[0].innerHTML = wordingMixed;
+            paras[1].innerHTML = wordingBackwards;
+            paras[2].innerHTML = sentence;
+            paras[2].className = "blue";
+
+        }
+    </script>
+</body>
+
+</html>

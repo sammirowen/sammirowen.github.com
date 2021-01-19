@@ -5,6 +5,10 @@ body {
     white-space: nowrap;
 }
 
+.subTitle {
+    margin-bottom: 0px;
+}
+
 header, footer {
     text-align: center;
 }
@@ -300,6 +304,7 @@ main {
 
 section ul {
     padding: 0px;
+    margin-top: 5px;
 }
 
 section ul li {
