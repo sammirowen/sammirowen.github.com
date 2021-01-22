@@ -1,5 +1,6 @@
 body {
     font-family: Athelas, sans-serif;
+    line-height: 1.45em;
     background-color: white;
 }
 
@@ -9,7 +10,7 @@ body {
 }
 
 img {
-    height: 395px;
+    height: 425px;
 }
 
 .container {
@@ -27,7 +28,7 @@ article {
     background-color: white;
     padding: 15px;
     margin: auto;
-    width: 600px;
+    width: 650px;
 }
 
 .orange {
