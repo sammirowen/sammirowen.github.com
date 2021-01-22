@@ -1,0 +1,56 @@
+body {
+    font-family: Athelas, sans-serif;
+    background-color: white;
+}
+
+#forms {
+    overflow: hidden;
+    max-width: 75ch;
+}
+
+img {
+    height: 395px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+article {
+    background-color: white;
+    padding: 15px;
+    margin: auto;
+    width: 600px;
+}
+
+.orange {
+    width: 100%;
+    background-color: #F7A616;
+}
+
+date {
+    color: #F7A616;
+}
+
+a {
+    text-decoration: none;
+    color: #F7A616;
+}
+
+footer a {
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+
