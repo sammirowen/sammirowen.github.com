@@ -33,7 +33,7 @@ article {
 
 .orange {
     width: 100%;
-    background-color: #F7A616;
+    background: linear-gradient(#F7A616 0%, #ffffff 80%);
 }
 
 date {
