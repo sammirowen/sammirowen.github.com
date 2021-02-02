@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Lib</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="mainPage">
+    <div id="main">
+        <form id="myForm">
+            <h1 id="mainTit">Decide Your Morning</h1>
+            <label for="beverage">Favorite Breakfast Drink?</label>
+            <input type="text" id="beverage" placeholder="Coffee"><br>
+
+            <label for="tool">A Kitchen Tool</label>
+            <input type="text" id="tool" placeholder="Spoon"><br>
+
+            <label for="ingred">An Ingredient?</label>
+            <input type="text" id="ingred" placeholder="Whipped Cream"><br>
+
+            <label for="liquid">Choose a Liquid</label>
+            <select id="liquid">
+                <option value="---">---</option>
+                <option value="milk">Milk</option>
+                <option value="orange juice">Orange Juice</option>
+                <option value="cream">Cream</option>
+                <option value="soda">Soda</option>
+            </select><br>
+
+            <label for="name">Name a Friend</label>
+            <input type="text" id="name" placeholder="Luke"><br>
+
+            <label for="flavor">Favorite Flavor?</label>
+            <select id="flavor">
+                <option value="---">---</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="vanilla">Vanilla</option>
+                <option value="strawberry">Strawberry</option>
+            </select><br>
+
+            <input id="buttonSub" type="submit" value="Send">
+        </form>
+
+        <h1 id="title" class="hidden"></h1>
+        <div id="result" class="hidden"></div>
+        <button id="returnButton" class="hidden">Start Over</button>
+        <article id="madlib">
+
+        </article>
+    </div>
+
+    <footer>
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5 </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"> Valid CSS</a>
+    </footer>
+
+</body>
+</html>
