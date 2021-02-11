@@ -58,3 +58,7 @@ footer {
     height: 500px;
 }
 
+.row {
+    display: flex;
+}
+
