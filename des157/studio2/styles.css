@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/background3.jpg);
+    background-size: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    align-items: baseline;
+    overflow-y: scroll;
+    padding-top: 50px;
+}
+
+#intro {
+    width: 30vw;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    
+}
+section > div > p {
+    padding: 20px;
+    width: 30vw;
+    color: white;
+}
+
+#longer {
+    width: 30vw;
+}
+
+.box {
+    background-color: black;
+}
+
+.pics {
+    width: 425px;
+    padding: 20px;
+}
+
+.tall {
+    height: 500px;
+}
+
+.long {
+    width: 500px;
+    height: 350px;
+}
+
+#row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: baseline;
+}
+
+footer > a {
+    text-decoration: none;
+    padding-right: 30px;
+}
+
+#preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgb(255, 0, 255) 0%, rgb(221, 128, 198) 100%);
+    color: #fff;
+	font-size: 3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.fadeout {
+	animation-name: fadeout;
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeout {
+	0%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
