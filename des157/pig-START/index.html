@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of PIG</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="instructionPopUp">
+        <h1>Game of PIG</h1>
+        <h4>How To Play</h4>
+        <p>There are two players. The player who goes first is randomly chosen, 
+            and they roll the dice first.The total of the roll is added to the current 
+            player's score, unless either die comes up as a ‘one.’ If a ‘one’ is rolled, 
+            this player's turn is over. After each roll, the current player can either roll again, 
+            (assuming a ‘one’ was not rolled) or they can pass to the other player. The first player 
+            to get 30 points or higher wins.
+        </p>
+        <div class="dieFront">
+            <img class="dieInstructions" src="image/1diered.png" alt="snake eyes">
+            <img class="dieInstructions" src="image/1diered.png" alt="snake eyes">
+        </div>
+        <p>
+            But be aware, if your dice both show “one” (snake eyes), your current score starts at 0 again! 
+        </p>
+        <button id="startgame" class="btn">START GAME</button>
+    </div>
+    
+    <div id="actualGame" class="hidden">
+        <div class="mainGame">
+            <div class="player1">
+                <h2>Player 1</h2>
+                <img class="avatar" src="image/player1.png">
+                <h3 id="scorePlayer1">0/30</h3>
+            </div>
+            <div class="game">
+                <div id="player"></div>
+                <div id="firstAction"></div>
+                <div id="actions">
+                    <button id="rollagain" class="btn">ROLL AGAIN</button>
+                    <button id="pass" class="btn">PASS</button>
+                </div>
+            </div>
+            <div class="player2">
+                <h2>Player 2</h2>
+                <img class="avatar" src="image/player2.png">
+                <h3 id="scorePlayer2">0/30</h3>
+            </div>
+        </div>
+    </div>
+
+    <!--popup that shows up only when a player has won-->
+    <div id="winningPopUp" class="hidden">
+        <img id="avatarWinner">
+        <h1 id="whoWon"></h1>
+        <div id="endBtns">
+            <button id="playAgain" class="btn">PLAY AGAIN</button>
+            <button id="quit" class="btn">QUIT</button>
+        </div>
+    </div>
+
+    <footer id="footer" class="hidden">
+        <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5 </a>
+        <a href="mailto:&#115;&#097;&#109;&#109;&#105;&#046;&#114;&#111;&#119;&#101;&#110;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;"
+                > Email </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"> Valid CSS</a>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
