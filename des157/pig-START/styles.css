@@ -124,7 +124,7 @@ div {
     width: 100px;
 }
 
-#footer > a{
+#footerLinks > a{
     padding-right: 20px;
     text-decoration: none;
 }

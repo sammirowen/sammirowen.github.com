@@ -7,7 +7,7 @@
     const score2 = document.getElementById('scorePlayer2');
     const actionArea = document.getElementById('actions');
     const firstAction = document.getElementById('firstAction');
-    const winningPopUp = document.getElementById('whoWon');
+    const winningPopUp = document.getElementById('winningPopUp');
     const instructionsPopUp = document.getElementById('instructionPopUp');
     const mainGame = document.getElementById('actualGame');
 
@@ -26,7 +26,7 @@
     startGame.addEventListener("click", function(){
         instructionsPopUp.className = "hidden";
         mainGame.className = "shown";
-        document.getElementById("footer").className = "shown";
+        document.getElementById("footerLinks").className = "shown";
         gameData.index = Math.round(Math.random());
         
         console.log("set up the turn!");
@@ -96,20 +96,25 @@
 
     function checkWinningCondition() {
         if(gameData.score[gameData.index] > gameData.gameEnd) {
-            winningPopUp.innerHTML = `<h2>${gameData.players[gameData.index]} wins
+            document.getElementById("whoWon").innerHTML = `<h2>${gameData.players[gameData.index]} wins
                 with ${gameData.score[gameData.index]} points!</h2>`;
+                
                 const winningSound = new Audio('sounds/winning.mp3');
                 winningSound.play();
-                actionArea.className = "hidden";
-                document.getElementById('avatarWinner').src = gameData.avatars[gameData.index];
-                document.getElementById('winningPopUp').className = "shown";
                 mainGame.className = "hidden";
+                actionArea.className = "hidden";
+                document.getElementById('footerLinks').className = "hidden";
+                winningPopUp.className = "shown";
+                document.getElementById('avatarWinner').src = gameData.avatars[gameData.index];
+                
+                
 
                 document.getElementById('playAgain').addEventListener('click', function(){
                     console.log("pressed play again");
-                    document.getElementById('winningPopUp').className = "hidden";
+                    winningPopUp.className = "hidden";
                     //reset Game
                     mainGame.className = "shown";
+                    document.getElementById("footerLinks").className = "shown";
                     gameData.score[0] = 0;
                     gameData.score[1] = 0;
                     showCurrentScore();
