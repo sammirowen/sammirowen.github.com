@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#div1 {
+    position: relative;
+}
+
+#box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+
+#mainPic {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    width: 300px;
+    height: 380px;
+}
+
+.moveable:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(-3px, 3px) rotate(-3deg); }
+    25% { transform: translate(0px, 2px) rotate(3deg); }
+    50% { transform: translate(3px, 1px) rotate(3deg); }
+    100% { transform: translate(0px, -2px) rotate(-3deg); }
+}
