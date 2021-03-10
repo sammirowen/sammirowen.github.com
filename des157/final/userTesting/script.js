@@ -73,7 +73,7 @@
     //picture section
     const firstPic = document.getElementById("photo1");
     firstPic.addEventListener("mouseover", function(){
-        firstPic.src = "./images/plaidTop.png";
+        firstPic.src = "./images/PlaidTop.png";
         firstPic.style.width = "230px";
     });
     firstPic.addEventListener("mouseout", function(){
