@@ -1,0 +1,188 @@
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    height: 110vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#directions {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+.show {
+    position: relative;
+    top: 70px;
+    left: 175px;
+    z-index: 1;
+}
+
+.sweatshirt {
+    width: 470px;
+    height: 400px;
+}
+
+#tb90 {
+    text-align: center;
+    font-size: 28px;
+    transform: rotate(-2deg);
+}
+
+#description {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+#mainBox {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.box {
+    width: 200px;
+    height: 250px;
+    padding-top: 30px;
+}
+
+h3 {
+    margin: 0;
+    padding-left: 25px;
+}
+
+#frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    z-index: -2;
+}
+
+#mainPic {
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    width: 300px;
+    height: 380px;
+    z-index: -3;
+}
+
+#yearTitle {
+    position: absolute;
+    top: 315px;
+    left: 140px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 35px;
+}
+
+.hidden {
+    display: none;
+}
+
+.moveable:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(-3px, 3px) rotate(-3deg); }
+    25% { transform: translate(0px, 2px) rotate(3deg); }
+    50% { transform: translate(3px, 1px) rotate(3deg); }
+    100% { transform: translate(0px, -2px) rotate(-3deg); }
+}
+
+#sweaterSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -1050px;
+    height: 700px;
+}
+
+#s1 {
+    position: absolute;
+    z-index: -4;
+    transform: rotate(30deg);
+}
+
+#s2 {
+    position: absolute;
+    z-index: -3;
+    top: 120px;
+    left: 60px;
+}
+#s3 {
+    position: absolute;
+    z-index: -2;
+    top: 280px;
+    left: 20px;
+}
+
+#disTitle {
+    font-size: 40px;
+    padding-left: 420px;
+    padding-top: 20px;
+}
+
+#sweaterDescrip {
+    padding-top: 160px;
+    padding-left: 550px;
+    width: 40%;
+}
+
+#titles {
+    height: 50vh;
+}
+#titles > h1{
+    font-size: 25px;
+    padding-top: 0;
+}
+
+.photos {
+    position: relative;
+    padding-top: 70px;
+    height: 60vh;
+}
+
+#photo1 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 10%;
+    left: 15%;
+    width: 230px;
+}
+
+#photo2 {
+    position: relative;
+    top: 8%;
+    left: 27%;
+    transform: rotate(10deg);
+    width: 230px;
+}
+
+#photo3 {
+    position: relative;
+    height: 300px;
+    transform: rotate(-2deg);
+    top: -7%;
+    left: 25%;
+}
+
+#photo4 {
+    position: relative;
+    height: 300px;
+    transform: rotate(5deg);
+    top: 15%;
+    left: 20%;
+}
