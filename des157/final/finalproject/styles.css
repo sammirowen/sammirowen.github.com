@@ -1,0 +1,219 @@
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+section {
+    height: 95vh;
+}
+
+#arrow {
+    position: absolute;
+    left: 250px;
+    width: 350px;
+    transform: rotate(20deg);
+}
+
+footer {
+    text-align: center;
+}
+
+footer > a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins';
+}
+
+#arrow2 {
+    position: absolute;
+    left: 225px;
+    top: 150px;
+    width: 330px;
+    transform: rotate(-170deg);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#left {
+    padding-right: 100px;
+}
+
+#right {
+    padding-left: 100px;
+}
+
+#suit1 {
+    padding-top: 20px;
+    width: 220px;
+}
+
+#suit2 {
+    padding-top: 20px;
+    width: 180px;
+}
+
+#suit3 {
+    padding-top: 20px;
+    width: 180px;
+}
+
+#suit4 {
+    width: 230px;
+}
+
+#box1, #box2 {
+    width: 210px;
+    text-align: center;
+}
+
+.show {
+    position: relative;
+    top: 70px;
+    left: 50px;
+    z-index: 1;
+}
+
+#tb90 {
+    text-align: center;
+    font-size: 28px;
+    transform: rotate(-2deg);
+}
+
+#mainFrame {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.box {
+    width: 200px;
+    height: 250px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    padding-left: 25px;
+    font-family: 'Poppins';
+}
+
+#frame {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 500px;
+    height: 500px;
+    z-index: -2;
+}
+
+#mainPic {
+    position: absolute;
+    top: 45px;
+    left: 150px;
+    width: 300px;
+    height: 380px;
+    z-index: -3;
+}
+
+.hidden {
+    display: none;
+}
+
+.moveable:hover {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { width: 200px; }
+    25% { width: 215px; }
+    50% { width:230px; }
+    75% { width: 215px; }
+    100% { width: 200px; }
+}
+
+#description {
+    width: 250px;
+    position: relative;
+    top: -160px;
+    left: 600px;
+    transform: rotate(-15deg);
+}
+
+#s1 {
+    position: absolute;
+    z-index: -4;
+    transform: rotate(30deg);
+}
+
+#s2 {
+    position: absolute;
+    z-index: -3;
+    top: 120px;
+    left: 60px;
+}
+#s3 {
+    position: absolute;
+    z-index: -2;
+    top: 280px;
+    left: 20px;
+}
+
+#disTitle {
+    font-size: 40px;
+    padding-left: 420px;
+    padding-top: 20px;
+}
+
+#mainBox {
+    width: 600px;
+    position: relative;
+}
+
+#yearTitle {
+    position: absolute;
+    top: 320px;
+    left: 170px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 35px;
+}
+
+#photo1 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 40px;
+    left: -40px;
+    width: 300px;
+    z-index: -4;
+}
+
+#photo2 {
+    position: absolute;
+    top: 240px;
+    left: 420px;
+    transform: rotate(10deg);
+    width: 230px;
+    z-index: -4;
+}
+
+#photo3 {
+    position: relative;
+    height: 300px;
+    transform: rotate(-2deg);
+    top: -7%;
+    left: 25%;
+}
+
+#photo4 {
+    position: absolute;
+    height: 200px;
+    transform: rotate(5deg);
+    top: 350px;
+    left: -40px;
+    z-index: -4;
+}
