@@ -1,10 +1,6 @@
 (function () {
     'using strict';
 
-    /*let left = document.getElementById('left');
-    left.style.transform = 'translate(70px, 0px)';
-    left.style.transition = "all 2s ease-out";*/
-
     //for picture frame area
     const suit = document.querySelectorAll('.moveable');
     const box = document.querySelectorAll('.box');
